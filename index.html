@@ -26,8 +26,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-Cqq2Sq54.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-ByePX0OZ.css">
+    <script type="module" crossorigin src="./assets/index-ChLmqpyF.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-wvjgREBl.css">
   </head>
   <body>
     <canvas id="scene"></canvas>
@@ -59,24 +59,18 @@
           <div class="vit">
             <div class="vit__form"><span id="form-dot"></span><b id="form-name">슬라임</b><span class="vit__tier" id="form-tier">기본형</span></div>
             <div class="hp"><div class="hp__fill" id="hp-fill"></div><span class="hp__text" id="hp-text">100 / 100</span><i class="hp__guard" id="hp-guard"></i></div>
+            <div class="xp" title="경험치: 젤리 결정을 모으면 레벨 업">
+              <b class="xp__lv" id="xp-lv">Lv 1</b>
+              <div class="xp__bar"><div class="xp__fill" id="xp-fill"></div></div>
+            </div>
           </div>
           <div class="lines" id="lines"></div>
           <div class="shapes" id="shapes" aria-label="형태 점수"></div>
           <p class="goal" id="goal"></p>
         </div>
-        <div class="wave">
-          <div class="wave__head"><b id="wave-no">웨이브 1 / 8</b><span id="wave-title">추적</span></div>
-          <div class="wave__aff" id="wave-aff"></div>
-          <div class="wave__row">
-            <div class="wave__bar"><div class="wave__fill" id="wave-fill"></div></div>
-            <b class="wave__time" id="wave-time">60</b>
-          </div>
-          <div class="xp" title="경험치: 젤리 결정을 모으면 레벨 업">
-            <b class="xp__lv" id="xp-lv">Lv 1</b>
-            <div class="xp__bar"><div class="xp__fill" id="xp-fill"></div></div>
-          </div>
-        </div>
+        <!-- 웨이브와 남은 시간은 위쪽 줄의 알약 하나, 레벨은 왼쪽 칸의 체력 아래 (2026-11-15, the user: "이거를 상단바에 합쳐서 안보이게 해줘. 너무 화면을 가려") -->
         <div class="hud__right">
+          <div class="wave" id="wave"><span class="wave__lbl">웨이브</span><b class="wave__no" id="wave-no">1/16</b><b class="wave__time" id="wave-time">60</b><div class="wave__bar"><div class="wave__fill" id="wave-fill"></div></div></div>
           <div class="tally tally--gold"><i class="coin" aria-hidden="true"></i><b id="gold">0</b></div>
           <div class="tally"><span>처치</span><b id="kills">0</b></div>
           <button class="hud__pause" data-act="pause" aria-label="일시정지">II</button>
