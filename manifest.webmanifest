@@ -1,0 +1,16 @@
+{
+  "name": "슬라임의 가능성",
+  "short_name": "슬라임",
+  "description": "젤리 슬라임이 스킬을 모아 전직하며 균열을 닫는 3D 서바이벌 게임",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "background_color": "#141b26",
+  "theme_color": "#141b26",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
