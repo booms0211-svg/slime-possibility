@@ -26,8 +26,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-ChLmqpyF.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-wvjgREBl.css">
+    <script type="module" crossorigin src="./assets/index-4SCLfIjJ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-kzK_VKjY.css">
   </head>
   <body>
     <canvas id="scene"></canvas>
@@ -38,10 +38,11 @@
         <div class="title__col">
           <p class="title__kicker">균열의 숲 서바이벌</p>
           <h1 class="title__name"><span>슬라임의</span><span class="title__big">가능성</span><i class="glint glint--a"></i><i class="glint glint--b"></i><i class="glint glint--c"></i></h1>
-          <p class="title__tag">무엇이든 될 수 있는 젤리 한 덩이.<br />흩어진 열두 정령의 조각을 모아 기사, 화염, 빙결, 분열, 번개, 대지, 바람, 별빛, 선율, 기계, 봉인, 시간 — 그리고 그 사이의 무언가가 되어 균열을 닫으세요.</p>
-          <div class="title__lines" id="title-lines" aria-label="열두 계열"></div>
+          <p class="title__tag">무엇이든 될 수 있는 젤리 한 덩이.<br />흩어진 열세 정령의 조각을 모아 기사, 화염, 빙결, 분열, 번개, 대지, 바람, 별빛, 선율, 기계, 봉인, 시간, 독 — 그리고 그 사이의 무언가가 되어 균열을 닫으세요.</p>
+          <div class="title__lines" id="title-lines" aria-label="열세 계열"></div>
           <nav class="title__menu">
             <button class="btn btn--primary btn--big" data-act="start">시작하기</button>
+            <button class="btn" data-act="duel">대결</button>
             <button class="btn" data-act="practice">연습 모드</button>
             <button class="btn" data-act="codex">도감</button>
             <button class="btn btn--ghost" data-act="settings">설정</button>
@@ -231,6 +232,11 @@
         </div>
       </section>
 
+      <!-- 대결 (2026-11-15): the lobby, the search, the face-off and the result (Duel.js fills the panel). -->
+      <section id="duel" class="screen panel-screen duel">
+        <div class="panel panel--duel" id="duel-panel"></div>
+      </section>
+
       <!-- 설정 -->
       <section id="settings" class="screen panel-screen">
         <div class="panel">
@@ -246,6 +252,7 @@
           <h2 class="panel__title">도감</h2>
           <nav class="codex__tabs" role="tablist">
             <button class="codex__tab" role="tab" data-act="codex-tab" data-tab="class">전직 <small id="codex-count"></small></button>
+            <button class="codex__tab" role="tab" data-act="codex-tab" data-tab="line">계열 특징</button>
             <button class="codex__tab" role="tab" data-act="codex-tab" data-tab="foe">적과 상성</button>
           </nav>
           <div id="codex-grid"></div>
