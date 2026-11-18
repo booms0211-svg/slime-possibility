@@ -26,8 +26,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-gxV4Itrl.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-yGrMB3hk.css">
+    <script type="module" crossorigin src="./assets/index-ixxfgsoB.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-AE47jdLK.css">
   </head>
   <body>
     <canvas id="scene"></canvas>
@@ -49,6 +49,8 @@
             <button class="btn btn--ghost" data-act="fullscreen" id="title-full" style="display: none">전체 화면</button>
           </nav>
           <p class="title__best" id="title-best"></p>
+          <!-- 창세의 의식 (2026-11-19): the player's world -->
+          <p class="title__world" id="title-world"></p>
         </div>
         <p class="title__help title__help--key"><b>WASD</b> 이동 · 일반 스킬은 자동 · <b>SPACE</b> 대시 · <b>Q E R</b> 전직 필살기 · <b>Esc</b> 일시정지</p>
         <p class="title__help title__help--touch">화면을 누른 채 끌면 이동 · 일반 스킬은 자동 · 오른쪽 아래 버튼으로 대시와 필살기 · <b>II</b> 일시정지</p>
@@ -72,6 +74,8 @@
         <!-- 웨이브와 남은 시간은 위쪽 줄의 알약 하나, 레벨은 왼쪽 칸의 체력 아래 (2026-11-15, the user: "이거를 상단바에 합쳐서 안보이게 해줘. 너무 화면을 가려") -->
         <div class="hud__right">
           <div class="wave" id="wave"><span class="wave__lbl">웨이브</span><b class="wave__no" id="wave-no">1/16</b><b class="wave__time" id="wave-time">60</b><div class="wave__bar"><div class="wave__fill" id="wave-fill"></div></div></div>
+          <!-- 영토 공명 (2026-11-19): whose ground the hero stands on, and how much of the field is its world's -->
+          <div class="tally tally--land" id="land"><i class="land__dot" aria-hidden="true"></i><span id="land-word">영토</span><small id="land-fx"></small><b id="land-pct">0%</b></div>
           <div class="tally tally--gold"><i class="coin" aria-hidden="true"></i><b id="gold">0</b></div>
           <div class="tally"><span>처치</span><b id="kills">0</b></div>
           <button class="hud__pause" data-act="pause" aria-label="일시정지">II</button>
@@ -235,6 +239,11 @@
       <!-- 대결 (2026-11-15): the lobby, the search, the face-off and the result (Duel.js fills the panel). -->
       <section id="duel" class="screen panel-screen duel">
         <div class="panel panel--duel" id="duel-panel"></div>
+      </section>
+
+      <!-- 창세의 의식 (2026-11-19): the question cards, the world's feel, the world revealed (Genesis.js fills the panel). -->
+      <section id="genesis" class="screen panel-screen genesis">
+        <div class="panel panel--genesis" id="genesis-panel"></div>
       </section>
 
       <!-- 설정 -->
