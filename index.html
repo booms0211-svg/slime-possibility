@@ -26,8 +26,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-ixxfgsoB.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-AE47jdLK.css">
+    <script type="module" crossorigin src="./assets/index-D4I6PosQ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-zKdf_DZT.css">
   </head>
   <body>
     <canvas id="scene"></canvas>
@@ -38,19 +38,10 @@
         <div class="title__col">
           <p class="title__kicker">균열의 숲 서바이벌</p>
           <h1 class="title__name"><span>슬라임의</span><span class="title__big">가능성</span><i class="glint glint--a"></i><i class="glint glint--b"></i><i class="glint glint--c"></i></h1>
-          <p class="title__tag">무엇이든 될 수 있는 젤리 한 덩이.<br />흩어진 열세 정령의 조각을 모아 기사, 화염, 빙결, 분열, 번개, 대지, 바람, 별빛, 선율, 기계, 봉인, 시간, 독 — 그리고 그 사이의 무언가가 되어 균열을 닫으세요.</p>
+          <p class="title__tag">무엇이든 될 수 있는 젤리 한 덩이.<br />열세 정령의 조각을 모아 전직하고, 균열을 닫으세요.</p>
           <div class="title__lines" id="title-lines" aria-label="열세 계열"></div>
-          <nav class="title__menu">
-            <button class="btn btn--primary btn--big" data-act="start">시작하기</button>
-            <button class="btn" data-act="duel">대결</button>
-            <button class="btn" data-act="practice">연습 모드</button>
-            <button class="btn" data-act="codex">도감</button>
-            <button class="btn btn--ghost" data-act="settings">설정</button>
-            <button class="btn btn--ghost" data-act="fullscreen" id="title-full" style="display: none">전체 화면</button>
-          </nav>
-          <p class="title__best" id="title-best"></p>
-          <!-- 창세의 의식 (2026-11-19): the player's world -->
-          <p class="title__world" id="title-world"></p>
+          <!-- 2026-11-19: the menu is Astryx's (ui/TitleMenu.js): 나의 세계, 시작하기, 대결 · 연습 모드 · 도감, the record, 설정 · 전체 화면 -->
+          <div class="title__menu-root" id="title-menu"></div>
         </div>
         <p class="title__help title__help--key"><b>WASD</b> 이동 · 일반 스킬은 자동 · <b>SPACE</b> 대시 · <b>Q E R</b> 전직 필살기 · <b>Esc</b> 일시정지</p>
         <p class="title__help title__help--touch">화면을 누른 채 끌면 이동 · 일반 스킬은 자동 · 오른쪽 아래 버튼으로 대시와 필살기 · <b>II</b> 일시정지</p>
