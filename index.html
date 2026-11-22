@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-    <meta name="theme-color" content="#161d4e" />
+    <meta name="theme-color" content="#12151f" />
     <title>슬라임의 가능성</title>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="슬라임의 가능성" />
@@ -26,8 +26,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-DcCZaLYS.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BgiaFLzp.css">
+    <script type="module" crossorigin src="./assets/index-DWu9xRFY.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-FQOfe5p8.css">
   </head>
   <body>
     <canvas id="scene"></canvas>
@@ -66,7 +66,7 @@
         <div class="hud__right">
           <div class="wave" id="wave"><span class="wave__lbl">웨이브</span><b class="wave__no" id="wave-no">1/16</b><b class="wave__time" id="wave-time">60</b><div class="wave__bar"><div class="wave__fill" id="wave-fill"></div></div></div>
           <!-- 영토 공명 (2026-11-19): whose ground the hero stands on, and how much of the field is its world's -->
-          <div class="tally tally--land" id="land"><i class="land__dot" aria-hidden="true"></i><span id="land-word">영토</span><small id="land-fx"></small><b id="land-pct">0%</b></div>
+          <div class="tally tally--land" id="land"><i class="land__dot" aria-hidden="true"></i><span id="land-word">영토</span><small id="land-fx"></small><b id="land-pct">0%</b><em id="land-wide" title="넓은 영토: 영토가 넓을수록 공격과 방어가 오르고 체력이 찹니다"></em></div>
           <div class="tally tally--gold"><i class="coin" aria-hidden="true"></i><b id="gold">0</b></div>
           <div class="tally"><span>처치</span><b id="kills">0</b></div>
           <button class="hud__pause" data-act="pause" aria-label="일시정지">II</button>
@@ -196,7 +196,7 @@
             </div>
           </div>
           <div class="row">
-            <button class="btn btn--ghost" data-act="quit">포기하기</button>
+            <button class="btn btn--danger" data-act="quit">포기하기</button>
             <button class="btn btn--ghost" data-act="pause-codex">도감</button>
             <button class="btn btn--primary" data-act="resume">계속하기</button>
           </div>
